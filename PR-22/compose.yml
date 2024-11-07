@@ -1,0 +1,7 @@
+services:
+ node_app:
+  image: node-app-server
+  container_name: node-app-server
+  restart: unless-stopped
+  ports:
+    - 3369:8080
